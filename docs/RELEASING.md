@@ -29,7 +29,7 @@ uv publish --token "$PYPI_API_TOKEN"
 
 ## Homebrew tap
 
-1. Publique primeiro a mesma versao no PyPI.
+1. Garanta que a tag `vX.Y.Z` ja exista no GitHub.
 2. Gere ou atualize a formula:
 
 ```bash
@@ -40,5 +40,5 @@ uv run python scripts/render_homebrew_formula.py
 4. O install final fica:
 
 ```bash
-brew install seu-user/tap/daten
+brew install henriquepmartins/tap/daten
 ```

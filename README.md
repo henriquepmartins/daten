@@ -11,7 +11,7 @@ uv tool install daten
 No macOS com Homebrew, a distribuicao recomendada fica em um tap proprio:
 
 ```bash
-brew install seu-user/tap/daten
+brew install henriquepmartins/tap/daten
 ```
 
 ## Comandos

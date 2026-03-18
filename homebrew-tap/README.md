@@ -12,7 +12,7 @@ homebrew-tap/
 
 ## Fluxo
 
-1. Publique a versao no PyPI.
+1. Garanta que a tag `vX.Y.Z` ja exista no GitHub.
 2. Rode:
 
 ```bash
@@ -23,5 +23,5 @@ uv run python scripts/render_homebrew_formula.py
 4. O install final sera:
 
 ```bash
-brew install seu-user/tap/daten
+brew install henriquepmartins/tap/daten
 ```

@@ -2,17 +2,16 @@ class Daten < Formula
   include Language::Python::Virtualenv
 
   desc "Scaffold data science and ML projects with uv"
-  homepage "https://pypi.org/project/daten/"
-  url "https://files.pythonhosted.org/packages/source/d/daten/daten-0.1.0.tar.gz"
-  sha256 "167560e437191e673b45b7175b0f629a5fc2d2ab7a32654674b2685ef474c1a4"
+  homepage "https://github.com/henriquepmartins/daten"
+  url "https://github.com/henriquepmartins/daten/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "REPLACE_WITH_GITHUB_ARCHIVE_SHA256"
   license "MIT"
 
   depends_on "python@3.12"
   depends_on "uv"
 
   def install
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 
   test do
