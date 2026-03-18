@@ -3,8 +3,8 @@ class Daten < Formula
 
   desc "Scaffold data science and ML projects with uv"
   homepage "https://github.com/henriquepmartins/daten"
-  url "https://github.com/henriquepmartins/daten/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "31de17d6b223d43c127aab5eaff8a8a3718dafd6e07471d63cf2b1b601359357"
+  url "https://github.com/henriquepmartins/daten/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "536fb175fb62df782f20ed4ae85f9075003501e7f3cfc26c896119fa8281a2b1"
   license "MIT"
 
   depends_on "python@3.12"
