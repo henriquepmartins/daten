@@ -3,6 +3,7 @@ from pathlib import Path
 from typer.testing import CliRunner
 
 import daten.cli as cli_module
+from daten import __version__
 from daten.bootstrap import DeployTarget, TemplateType
 from daten.cli import app
 from tests.test_scaffolds import RecordingUVRunner
@@ -14,7 +15,7 @@ def test_version_flag_returns_current_version() -> None:
     result = runner.invoke(app, ["--version"])
 
     assert result.exit_code == 0
-    assert "0.1.0" in result.stdout
+    assert __version__ in result.stdout
 
 
 def test_init_generates_notebook_project(tmp_path: Path, monkeypatch) -> None:
